@@ -11,7 +11,7 @@ I found an outdated script on `djangosnippets`_, that doesn't work
 anymore and updated it to work with the latest jquery version. Feel free
 to comment with suggestions to improve it.
 
-::
+.. code-block:: javascript
 
     (function() {
         function main() {

@@ -13,4 +13,4 @@ GITHUB_URL = "http://www.github.com/KristianOellegaard/blog.kristian.io/"
 
 # Looks
 
-THEME = 'notmyidea'
+THEME = 'tuxlite_tbs'
