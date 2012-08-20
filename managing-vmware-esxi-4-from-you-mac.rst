@@ -1,7 +1,7 @@
 Managing VMware ESXi 4 from you mac
 ###################################
 :date: 2011-05-11 14:16
-:category: Mac, System administration
+:category: Mac
 
 .. raw:: html
 

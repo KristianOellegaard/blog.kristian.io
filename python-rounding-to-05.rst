@@ -1,7 +1,7 @@
 Python rounding to 05
 #####################
 :date: 2011-08-29 13:55
-:category: Ikke kategoriseret
+:category: Python
 
 Here in Switzerland they decided (for some reason, that can't be good)
 not to pay the correct amount, but round it to the nearest 0/5 cent -

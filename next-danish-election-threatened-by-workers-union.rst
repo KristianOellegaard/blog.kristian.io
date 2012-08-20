@@ -1,7 +1,7 @@
 Next Danish election threatened by workers union
 ################################################
 :date: 2011-02-21 23:15
-:category: Ikke kategoriseret
+:category: Other
 
 In Denmark we will soon have the next 4th yearly election for our
 parliament "folketinget". However, it seems to be threatened by the

@@ -1,7 +1,7 @@
 VMVare fusion black screen after first reboot
 #############################################
 :date: 2011-05-07 22:19
-:category: Apple, Mac, System administration
+:category: Sysadm
 
 Today i wanted to test some stuff, so i fired up 3 vms with the newest
 ubuntu server, i used VMVware fusions easy install feature and it didnt

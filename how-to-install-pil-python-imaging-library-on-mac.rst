@@ -1,7 +1,7 @@
 How to install PIL (Python Imaging Library) on Mac
 ##################################################
 :date: 2011-02-12 13:02
-:category: Django, Mac
+:category: Mac
 
 I often get the error "ImportError: No module named PIL", when using
 ImageFields in django. I had my current mac for about 2 years and i

@@ -1,7 +1,7 @@
 Plugins (management) with RabbitMQ
 ##################################
 :date: 2011-08-05 15:11
-:category: Ikke kategoriseret
+:category: Sysadm
 
 Today i spent quite some time investigating why i could make the plugin
 "management" run with RabbitMQ. I was running ubuntu 10.04 (LTS) and did

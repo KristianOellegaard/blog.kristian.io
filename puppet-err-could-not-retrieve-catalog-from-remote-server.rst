@@ -1,7 +1,7 @@
 Puppet: err: Could not retrieve catalog from remote server
 ##########################################################
 :date: 2011-01-13 20:50
-:category: System administration
+:category: Sysadm
 
 .. raw:: html
 
