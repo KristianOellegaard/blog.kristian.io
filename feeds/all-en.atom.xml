@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="/" rel="alternate"></link><link href="/feeds/all-en.atom.xml" rel="self"></link><id>/</id><updated>2011-08-29T13:55:00Z</updated><entry><title>Python rounding to 05</title><link href="/python-rounding-to-05.html" rel="alternate"></link><updated>2011-08-29T13:55:00Z</updated><author><name>kristian</name></author><id>tag:,2011-08-29:python-rounding-to-05.html</id><summary type="html">&lt;p&gt;Here in Switzerland they decided (for some reason, that can't be good)
+not to pay the correct amount, but round it to the nearest 0/5 cent -
+which is a pain when doing python stuff. Therefore i made a Decimal
+rounding function for python, check it out:
+`` from decimal import Decimal, ROUND_HALF_UP  def decimal_round(d, digits=0, to_five=True):     if to_five:         d = (d/Decimal(&amp;quot;5&amp;quot;))     d = d.quantize(Decimal(&amp;quot;1&amp;quot;) / (Decimal('10') ** digits), rounding=ROUND_HALF_UP)     if to_five:         d = d * Decimal(&amp;quot;5&amp;quot;)     return d``&lt;/p&gt;
+</summary></entry><entry><title>Plugins (management) with RabbitMQ</title><link href="/plugins-management-with-rabbitmq.html" rel="alternate"></link><updated>2011-08-05T15:11:00Z</updated><author><name>kristian</name></author><id>tag:,2011-08-05:plugins-management-with-rabbitmq.html</id><summary type="html">&lt;p&gt;Today i spent quite some time investigating why i could make the plugin
+&amp;quot;management&amp;quot; run with RabbitMQ. I was running ubuntu 10.04 (LTS) and did
+sudo apt-get install rabbitmq-server.&lt;/p&gt;
+&lt;p&gt;First of all, it was a mystery how to enable the plugins. There were no
+default plugin directory existing, but thats solved by adding it
+yourself. You can find your rabbitmq directory with whereis, e.g.
+&amp;quot;whereis rabbitmq&amp;quot;. Then you just create a folder called &amp;quot;plugins&amp;quot;
+inside the folder called rabbitmq_version, in my case:
+/usr/lib/rabbitmq/lib/rabbitmq_server-1.7.2/&lt;/p&gt;
+&lt;p&gt;In the above case, i didnt get it working, as the management interface
+isn't compatible with 1.7.2, which is bundled with the LTS. So now I'm
+investigating the possibility to upgrade it via their custom apt-get
+repository available from their website.&lt;/p&gt;
+&lt;p&gt;However, the reason why im writing this, is that i spent a lot of time
+not beeing able to enable the plugins.&lt;/p&gt;
+&lt;p&gt;You have to run a script inside the bin folder in /usr/lib/rabbitmq/ -
+both for enabling and disabling plugins&lt;/p&gt;
+</summary></entry><entry><title>Managing VMware ESXi 4 from you mac</title><link href="/managing-vmware-esxi-4-from-you-mac.html" rel="alternate"></link><updated>2011-05-11T14:16:00Z</updated><author><name>kristian</name></author><id>tag:,2011-05-11:managing-vmware-esxi-4-from-you-mac.html</id><summary type="html">&lt;p&gt;&lt;p&gt;For my own reference, and maybe others i found this very usefull link:
+&lt;a class="reference external" href="http://www.howconfig.com/linux/how-to-open-cli-to-vmware-esxi-how-to-clone-virtual-machines/"&gt;http://www.howconfig.com/linux/how-to-open-cli-to-vmware-esxi-how-to-clone-virtual-machines/&lt;/a&gt;
+This will be a direct quote, in case the site will ever change:&lt;/p&gt;
+&lt;blockquote&gt;
+You can access the CLI by switching to terminal 1 using Alt-F1. Now
+type “unsupported”, This is not echoed so you won’t see anything. If
+you get it right, you will get a prompt asking for the root pasword.
+( This might not work in ESXi 4.0 as VMWare is trying to limit ESXi
+for their own corporate reasons ) That drops you at a shell prompt.
+(ash is our shell). Hint: editor = vi Now you can you modify
+/etc/inetd.conf and uncomment the ssh line so that you can ssh into
+it unless you are planning always being at the console. Reboot (
+init 6 ) Cloning Virtual machines in ESXi vmkfs tools -i
+/vmfs/volumes/datastore/YourVM/YourVM.vmdk
+/vmfs/volumes/datastore/NewVM/newvm.vmdk vim-cmd vmsvc/getallvms
+vim-cmd vmsvc/power.reset xx check out these ( with vim-cmd
+vmsvc/command ): power.off power.on power.reboot power.reset
+power.shutdown power.suspend esxtop = is your top tool&lt;/blockquote&gt;
+&lt;p&gt;My tips: Just ssh to your ESXi server e.g. ssh &lt;a class="reference external" href="mailto:root&amp;#64;esxi"&gt;root&amp;#64;esxi&lt;/a&gt; and run the
+above commands. It might tell you that its unsupported, unfortunately
+there is no supported client to mac, so thats not really usefull
+information anyway Use at your own risk.&lt;/p&gt;
+&lt;/p&gt;</summary></entry><entry><title>VMVare fusion black screen after first reboot</title><link href="/vmvare-fusion-black-screen-after-first-reboot.html" rel="alternate"></link><updated>2011-05-07T22:19:00Z</updated><author><name>kristian</name></author><id>tag:,2011-05-07:vmvare-fusion-black-screen-after-first-reboot.html</id><summary type="html">&lt;p&gt;Today i wanted to test some stuff, so i fired up 3 vms with the newest
+ubuntu server, i used VMVware fusions easy install feature and it didnt
+take many minutes before everything worked, however, then i did sudo
+reboot and got black screen, no reaction at all. However, after randomly
+doing a couple of things, i tried to turn it off - and it actually
+printed the different services going down. So i found out that it
+default didnt activate any tty's, so you just have to switch to any one
+of them, e.g. ALT + F1 (if you are on a macbook pro too, remember the FN
+button in the combination, to actually use the F2 key)&lt;/p&gt;
+</summary></entry><entry><title>Next Danish election threatened by workers union</title><link href="/next-danish-election-threatened-by-workers-union.html" rel="alternate"></link><updated>2011-02-21T23:15:00Z</updated><author><name>kristian</name></author><id>tag:,2011-02-21:next-danish-election-threatened-by-workers-union.html</id><summary type="html">&lt;p&gt;In Denmark we will soon have the next 4th yearly election for our
+parliament &amp;quot;folketinget&amp;quot;. However, it seems to be threatened by the
+workers union PROSA, whose members are maintaining some of the most
+important IT systems in Denmark (including the police systems and the
+tax authorities). All these systems are maintained by CSC, who made a
+lockout of some of the works unions members, which resulted in a strike
+for even more members. If you ask me CSC reminds me of overpriced public
+IT projects - it always ends this way. Furthermore, its really common
+that every time they finish a project, that they charged many tax moneys
+for, it seems to be lacking functionality. However, the public IT
+administration seems to be married with them and continues to pick them
+for every project. I think this is a great example of the public IT
+administration failing once again - never pick the same supplier for all
+the public service systems - you risk loosing them all simultaneously.
+Read more at &lt;a class="reference external" href="http://www.comon.dk/nyheder/prosa-truer-folketingsvalg-1.391053.html"&gt;comon&lt;/a&gt;&lt;/p&gt;
+</summary></entry><entry><title>How to install PIL (Python Imaging Library) on Mac</title><link href="/how-to-install-pil-python-imaging-library-on-mac.html" rel="alternate"></link><updated>2011-02-12T13:02:00Z</updated><author><name>kristian</name></author><id>tag:,2011-02-12:how-to-install-pil-python-imaging-library-on-mac.html</id><summary type="html">&lt;p&gt;I often get the error &amp;quot;ImportError: No module named PIL&amp;quot;, when using
+ImageFields in django. I had my current mac for about 2 years and i
+never found out how to install PIL. Today, however, i really needed it
+and i found this &lt;a class="reference external" href="http://www.p16blog.com/p16/2008/05/appengine-installing-pil-on-os-x-1053.html"&gt;amazing fix&lt;/a&gt;. In case this perfect description will
+be deleted, I've inserted it below for my own reference. &lt;strong&gt;Full credits
+to p16blog.com&lt;/strong&gt; Execute the following code
+&lt;tt class="docutils literal"&gt;cd /Library/Frameworks sudo ln &lt;span class="pre"&gt;-s&lt;/span&gt; /System/Library/Frameworks/Python.framework/ Python.framework&lt;/tt&gt;
+&lt;a class="reference external" href="http://pythonmac.org/packages/py25-fat/index.html"&gt;Download&lt;/a&gt; and install PIL Remember to add PIL to PYTHONPATH
+&lt;tt class="docutils literal"&gt;export &lt;span class="pre"&gt;PYTHONPATH=/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/&lt;/span&gt;&lt;/tt&gt;
+&lt;em&gt;(should be added to your startup script, e.g. ~/.bash_profile)&lt;/em&gt;&lt;/p&gt;
+</summary></entry><entry><title>Puppet: err: Could not retrieve catalog from remote server</title><link href="/puppet-err-could-not-retrieve-catalog-from-remote-server.html" rel="alternate"></link><updated>2011-01-13T20:50:00Z</updated><author><name>kristian</name></author><id>tag:,2011-01-13:puppet-err-could-not-retrieve-catalog-from-remote-server.html</id><summary type="html">&lt;p&gt;&lt;p&gt;Yesterday i found &lt;a class="reference external" href="http://www.puppetlabs.com/puppet/introduction/"&gt;Puppet&lt;/a&gt; and shortly after i bought the book &lt;a class="reference external" href="http://www.apress.com/book/view/1590599780"&gt;Pulling
+Strings With Puppet&lt;/a&gt;. I got up and running with a few test machines
+(while reading the book) within a couple of hours and i managed to do
+some basic stuff. Furthermore i installed puppet-dashboard, an overall
+pretty undocumented process. Maybe I'll write a post about this later.
+However, i used many hours trying to debug this really annoying error:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+err: Could not retrieve catalog from remote server: Error 400 on
+SERVER: Could not find class nginx in namespaces &amp;lt;class&amp;gt; at
+/etc/puppet/manifests/classes/&amp;lt;class&amp;gt;.pp:3 on node &amp;lt;fqdn&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;I got this error after installing the nginx module, from &amp;quot;module forge&amp;quot;
+- by install i mean git clone the github page. I put in into
+/etc/puppet/modules/ and after adding nginx to a class, i was stuck with
+this error. The solution, however, is really simple. When you clone the
+nginx module, the directory is called puppet-nginx - you need to rename
+it, so its called nginx and nothing else. This will remove this error. I
+googled this thing for hours, hopefully this will be #1 next time
+someone experience this. Please comment if you use Puppet and saw this
+article! :-)&lt;/p&gt;
+&lt;/p&gt;</summary></entry><entry><title>Current page class, for visited page in menu</title><link href="/current-page-class-for-visited-page-in-menu.html" rel="alternate"></link><updated>2011-01-01T20:16:00Z</updated><author><name>kristian</name></author><id>tag:,2011-01-01:current-page-class-for-visited-page-in-menu.html</id><summary type="html">&lt;p&gt;&lt;p&gt;I found an outdated script on &lt;a class="reference external" href="http://djangosnippets.org/snippets/435/"&gt;djangosnippets&lt;/a&gt;, that doesn't work
+anymore and updated it to work with the latest jquery version. Feel free
+to comment with suggestions to improve it.&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+(function() {
+    function main() {
+    var nav  = $('.menu ul');
+    var path = window.location.pathname.split('/').slice(1,-1);
+    function act(p) {
+        return nav.not(nav.find('li.active').parent()).find('li&amp;gt;a[href=&amp;quot;/'+p+'&amp;quot;]').parent().addClass('active').length;
+    }
+    if (path.length)
+    {
+        for(; path.length; path.pop())
+        {
+        act(path.join('/')+'/');
+        }
+    } else
+        act('');
+    }
+    $(document).ready(main);
+})()
+&lt;/pre&gt;
+&lt;/p&gt;</summary></entry><entry><title>Apple iCal integration with HTML website</title><link href="/apple-ical-integration-with-html-website.html" rel="alternate"></link><updated>2010-11-14T15:21:00Z</updated><author><name>kristian</name></author><id>tag:,2010-11-14:apple-ical-integration-with-html-website.html</id><summary type="html">&lt;p&gt;&lt;p&gt;Currently i work in a customer service outsourcing company, where we use
+a system called TotalView for taskforce management. This means that
+every agent can log into this system and check when they have to work
+and how they are doing while they work. I like the concept, however it
+is really annoying that i have to check both my own calendar and
+TotalView. I've been considering to manually insert the data - but why
+not make a system that does it automatically? This means, that i've
+spent the last 4 hours making a system, that collects all relevant data
+from TotalView for the current and the next month and delivers it in the
+iCalendar format, which is compatible with all major calendar apps. The
+system is (of course) made with &lt;a class="reference external" href="http://www.djangoproject.com"&gt;django&lt;/a&gt; and I'm using a library for
+&lt;a class="reference external" href="http://www.crummy.com/software/BeautifulSoup/"&gt;parsing the HTML&lt;/a&gt;and one for &lt;a class="reference external" href="http://codespeak.net/icalendar/"&gt;formatting the iCalendar output&lt;/a&gt;.
+Here is the code:&lt;/p&gt;
+&lt;script src="http://pastebin.com/embed_js.php?i=JPyG4cne"&gt;&lt;/script&gt;&lt;/p&gt;</summary></entry></feed>

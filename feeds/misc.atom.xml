@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="/" rel="alternate"></link><link href="/feeds/misc.atom.xml" rel="self"></link><id>/</id><updated>2010-10-20T21:39:00Z</updated><entry><title>CV</title><link href="/cv.html" rel="alternate"></link><updated>2010-10-20T21:39:00Z</updated><author><name>kristian</name></author><id>tag:,2010-10-20:cv.html</id><summary type="html">&lt;p&gt;[linkedinresume lang=en]&lt;/p&gt;
+</summary></entry><entry><title>Billeder</title><link href="/billeder.html" rel="alternate"></link><updated>2010-09-14T18:34:00Z</updated><author><name>kristian</name></author><id>tag:,2010-09-14:billeder.html</id><summary type="html"></summary></entry><entry><title>Om</title><link href="/om.html" rel="alternate"></link><updated>2010-09-01T09:36:00Z</updated><author><name>kristian</name></author><id>tag:,2010-09-01:om.html</id><summary type="html">&lt;p&gt;Jeg hedder Kristian Øllegaard, er 20 år gammel og jeg bruger det meste
+af min fritid på mit hjemmesidefirma &lt;a class="reference external" href="http://www.prinkk.net"&gt;prinkk&lt;/a&gt;. I mit firma beskæftiger
+jeg mig primært med hosting af websites og programmering i sproget
+&lt;a class="reference external" href="http://www.djangoproject.com"&gt;django&lt;/a&gt;. &lt;img alt="image0" src="http://lastfm.dontdrinkandroot.net/tools/user/artistcloud/Oellegaard/3month/normal_thumb.png" /&gt;&lt;/p&gt;
+</summary></entry></feed>

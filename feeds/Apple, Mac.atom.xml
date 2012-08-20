@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="/" rel="alternate"></link><link href="/feeds/Apple,%20Mac.atom.xml" rel="self"></link><id>/</id><updated>2011-01-06T22:50:00Z</updated><entry><title>It&amp;#039;s finally here. The mac app store.</title><link href="/it039s-finally-here-the-mac-app-store.html" rel="alternate"></link><updated>2011-01-06T22:50:00Z</updated><author><name>kristian</name></author><id>tag:,2011-01-06:it039s-finally-here-the-mac-app-store.html</id><summary type="html">&lt;p&gt;Let me start by saying, I really love my mac - and all the stuff that
+comes with it. When I, two years ago, switched from Windows Vista to Mac
+OS X I was thrilled by the general quality of the applications available
+for OS X. Everything looks nicer and works better. This is why I have
+been looking forward to the release of the Mac App Store. A quick view
+shows, what Apple showed on their prelaunch site months ago: &lt;a href="#id3"&gt;&lt;span class="problematic" id="id4"&gt;`|Mac App
+Store Overview|`_&lt;/span&gt;&lt;/a&gt; It looks a bit like iTunes, but its entirely&amp;nbsp;separated
+(thank god!). I initially tried to download &lt;a class="reference external" href="http://itunes.apple.com/dk/app/mindnode-for-mac/id402397683?mt=12"&gt;MindNode for Mac&lt;/a&gt;.&amp;nbsp;&amp;nbsp;Its
+was surprisingly easy and the software was automatically added to the
+dock. Currently the selection is a bit narrow and many of the apps
+available are iphone ports and to be honest, I dont think &lt;a class="reference external" href="http://itunes.apple.com/dk/app/angry-birds/id403961173?mt=12"&gt;Angry Birds&lt;/a&gt;
+is as fun on the Mac as it is on my iPhone. However, the Danish App
+Store reviews gives another impression. If you didn't update your Mac
+yet, you can do it from System Preferences. The download is not too big
+and after a fast restart you are ready to try the brand new Mac App
+Store.&lt;/p&gt;
+&lt;!-- |Mac App Store --&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;./its-finally-here-the-mac-app-store.rst&lt;/tt&gt;, line 27)&lt;/p&gt;
+malformed substitution definition.&lt;/div&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;./its-finally-here-the-mac-app-store.rst&lt;/tt&gt;, line 28)&lt;/p&gt;
+Explicit markup ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;Overview| image:: &lt;a class="reference external" href="http://kristian.oellegaard.com/wp-content/uploads/2011/01"&gt;http://kristian.oellegaard.com/wp-content/uploads/2011/01&lt;/a&gt;/Skærmbillede-2011-01-06-kl.-23.24.16-300x235.png
+.. &lt;a href="#id1"&gt;&lt;span class="problematic" id="id2"&gt;|image1|&lt;/span&gt;&lt;/a&gt; image:: &lt;a class="reference external" href="http://kristian.oellegaard.com/wp-content/uploads/2011/01"&gt;http://kristian.oellegaard.com/wp-content/uploads/2011/01&lt;/a&gt;/Skærmbillede-2011-01-06-kl.-23.24.16-300x235.png&lt;/p&gt;
+&lt;div class="system-messages section"&gt;
+&lt;h2&gt;Docutils System Messages&lt;/h2&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;./its-finally-here-the-mac-app-store.rst&lt;/tt&gt;, line 28); &lt;em&gt;&lt;a href="#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Undefined substitution referenced: &amp;quot;image1&amp;quot;.&lt;/div&gt;
+&lt;div class="system-message" id="id3"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;./its-finally-here-the-mac-app-store.rst&lt;/tt&gt;, line 6); &lt;em&gt;&lt;a href="#id4"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Unknown target name: &amp;quot;|mac app store overview|&amp;quot;.&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry></feed>

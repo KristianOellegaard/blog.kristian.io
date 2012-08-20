@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="/" rel="alternate"></link><link href="/feeds/System%20administration.atom.xml" rel="self"></link><id>/</id><updated>2011-01-13T20:50:00Z</updated><entry><title>Puppet: err: Could not retrieve catalog from remote server</title><link href="/puppet-err-could-not-retrieve-catalog-from-remote-server.html" rel="alternate"></link><updated>2011-01-13T20:50:00Z</updated><author><name>kristian</name></author><id>tag:,2011-01-13:puppet-err-could-not-retrieve-catalog-from-remote-server.html</id><summary type="html">&lt;p&gt;&lt;p&gt;Yesterday i found &lt;a class="reference external" href="http://www.puppetlabs.com/puppet/introduction/"&gt;Puppet&lt;/a&gt; and shortly after i bought the book &lt;a class="reference external" href="http://www.apress.com/book/view/1590599780"&gt;Pulling
+Strings With Puppet&lt;/a&gt;. I got up and running with a few test machines
+(while reading the book) within a couple of hours and i managed to do
+some basic stuff. Furthermore i installed puppet-dashboard, an overall
+pretty undocumented process. Maybe I'll write a post about this later.
+However, i used many hours trying to debug this really annoying error:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+err: Could not retrieve catalog from remote server: Error 400 on
+SERVER: Could not find class nginx in namespaces &amp;lt;class&amp;gt; at
+/etc/puppet/manifests/classes/&amp;lt;class&amp;gt;.pp:3 on node &amp;lt;fqdn&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;I got this error after installing the nginx module, from &amp;quot;module forge&amp;quot;
+- by install i mean git clone the github page. I put in into
+/etc/puppet/modules/ and after adding nginx to a class, i was stuck with
+this error. The solution, however, is really simple. When you clone the
+nginx module, the directory is called puppet-nginx - you need to rename
+it, so its called nginx and nothing else. This will remove this error. I
+googled this thing for hours, hopefully this will be #1 next time
+someone experience this. Please comment if you use Puppet and saw this
+article! :-)&lt;/p&gt;
+&lt;/p&gt;</summary></entry></feed>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="/" rel="alternate"></link><link href="/feeds/Mac,%20System%20administration.atom.xml" rel="self"></link><id>/</id><updated>2011-05-11T14:16:00Z</updated><entry><title>Managing VMware ESXi 4 from you mac</title><link href="/managing-vmware-esxi-4-from-you-mac.html" rel="alternate"></link><updated>2011-05-11T14:16:00Z</updated><author><name>kristian</name></author><id>tag:,2011-05-11:managing-vmware-esxi-4-from-you-mac.html</id><summary type="html">&lt;p&gt;&lt;p&gt;For my own reference, and maybe others i found this very usefull link:
+&lt;a class="reference external" href="http://www.howconfig.com/linux/how-to-open-cli-to-vmware-esxi-how-to-clone-virtual-machines/"&gt;http://www.howconfig.com/linux/how-to-open-cli-to-vmware-esxi-how-to-clone-virtual-machines/&lt;/a&gt;
+This will be a direct quote, in case the site will ever change:&lt;/p&gt;
+&lt;blockquote&gt;
+You can access the CLI by switching to terminal 1 using Alt-F1. Now
+type “unsupported”, This is not echoed so you won’t see anything. If
+you get it right, you will get a prompt asking for the root pasword.
+( This might not work in ESXi 4.0 as VMWare is trying to limit ESXi
+for their own corporate reasons ) That drops you at a shell prompt.
+(ash is our shell). Hint: editor = vi Now you can you modify
+/etc/inetd.conf and uncomment the ssh line so that you can ssh into
+it unless you are planning always being at the console. Reboot (
+init 6 ) Cloning Virtual machines in ESXi vmkfs tools -i
+/vmfs/volumes/datastore/YourVM/YourVM.vmdk
+/vmfs/volumes/datastore/NewVM/newvm.vmdk vim-cmd vmsvc/getallvms
+vim-cmd vmsvc/power.reset xx check out these ( with vim-cmd
+vmsvc/command ): power.off power.on power.reboot power.reset
+power.shutdown power.suspend esxtop = is your top tool&lt;/blockquote&gt;
+&lt;p&gt;My tips: Just ssh to your ESXi server e.g. ssh &lt;a class="reference external" href="mailto:root&amp;#64;esxi"&gt;root&amp;#64;esxi&lt;/a&gt; and run the
+above commands. It might tell you that its unsupported, unfortunately
+there is no supported client to mac, so thats not really usefull
+information anyway Use at your own risk.&lt;/p&gt;
+&lt;/p&gt;</summary></entry></feed>

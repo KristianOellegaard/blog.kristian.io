@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="/" rel="alternate"></link><link href="/feeds/Ikke%20kategoriseret.atom.xml" rel="self"></link><id>/</id><updated>2011-08-29T13:55:00Z</updated><entry><title>Python rounding to 05</title><link href="/python-rounding-to-05.html" rel="alternate"></link><updated>2011-08-29T13:55:00Z</updated><author><name>kristian</name></author><id>tag:,2011-08-29:python-rounding-to-05.html</id><summary type="html">&lt;p&gt;Here in Switzerland they decided (for some reason, that can't be good)
+not to pay the correct amount, but round it to the nearest 0/5 cent -
+which is a pain when doing python stuff. Therefore i made a Decimal
+rounding function for python, check it out:
+`` from decimal import Decimal, ROUND_HALF_UP  def decimal_round(d, digits=0, to_five=True):     if to_five:         d = (d/Decimal(&amp;quot;5&amp;quot;))     d = d.quantize(Decimal(&amp;quot;1&amp;quot;) / (Decimal('10') ** digits), rounding=ROUND_HALF_UP)     if to_five:         d = d * Decimal(&amp;quot;5&amp;quot;)     return d``&lt;/p&gt;
+</summary></entry><entry><title>Plugins (management) with RabbitMQ</title><link href="/plugins-management-with-rabbitmq.html" rel="alternate"></link><updated>2011-08-05T15:11:00Z</updated><author><name>kristian</name></author><id>tag:,2011-08-05:plugins-management-with-rabbitmq.html</id><summary type="html">&lt;p&gt;Today i spent quite some time investigating why i could make the plugin
+&amp;quot;management&amp;quot; run with RabbitMQ. I was running ubuntu 10.04 (LTS) and did
+sudo apt-get install rabbitmq-server.&lt;/p&gt;
+&lt;p&gt;First of all, it was a mystery how to enable the plugins. There were no
+default plugin directory existing, but thats solved by adding it
+yourself. You can find your rabbitmq directory with whereis, e.g.
+&amp;quot;whereis rabbitmq&amp;quot;. Then you just create a folder called &amp;quot;plugins&amp;quot;
+inside the folder called rabbitmq_version, in my case:
+/usr/lib/rabbitmq/lib/rabbitmq_server-1.7.2/&lt;/p&gt;
+&lt;p&gt;In the above case, i didnt get it working, as the management interface
+isn't compatible with 1.7.2, which is bundled with the LTS. So now I'm
+investigating the possibility to upgrade it via their custom apt-get
+repository available from their website.&lt;/p&gt;
+&lt;p&gt;However, the reason why im writing this, is that i spent a lot of time
+not beeing able to enable the plugins.&lt;/p&gt;
+&lt;p&gt;You have to run a script inside the bin folder in /usr/lib/rabbitmq/ -
+both for enabling and disabling plugins&lt;/p&gt;
+</summary></entry><entry><title>Next Danish election threatened by workers union</title><link href="/next-danish-election-threatened-by-workers-union.html" rel="alternate"></link><updated>2011-02-21T23:15:00Z</updated><author><name>kristian</name></author><id>tag:,2011-02-21:next-danish-election-threatened-by-workers-union.html</id><summary type="html">&lt;p&gt;In Denmark we will soon have the next 4th yearly election for our
+parliament &amp;quot;folketinget&amp;quot;. However, it seems to be threatened by the
+workers union PROSA, whose members are maintaining some of the most
+important IT systems in Denmark (including the police systems and the
+tax authorities). All these systems are maintained by CSC, who made a
+lockout of some of the works unions members, which resulted in a strike
+for even more members. If you ask me CSC reminds me of overpriced public
+IT projects - it always ends this way. Furthermore, its really common
+that every time they finish a project, that they charged many tax moneys
+for, it seems to be lacking functionality. However, the public IT
+administration seems to be married with them and continues to pick them
+for every project. I think this is a great example of the public IT
+administration failing once again - never pick the same supplier for all
+the public service systems - you risk loosing them all simultaneously.
+Read more at &lt;a class="reference external" href="http://www.comon.dk/nyheder/prosa-truer-folketingsvalg-1.391053.html"&gt;comon&lt;/a&gt;&lt;/p&gt;
+</summary></entry></feed>
