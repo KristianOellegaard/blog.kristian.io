@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kristian's blog</title><link href="http://blog.kristian.io/" rel="alternate"></link><link href="http://blog.kristian.io/feeds/Python.atom.xml" rel="self"></link><id>http://blog.kristian.io/</id><updated>2011-08-29T13:55:00+02:00</updated><entry><title>Python rounding to 05</title><link href="http://blog.kristian.io/python-rounding-to-05.html" rel="alternate"></link><updated>2011-08-29T13:55:00+02:00</updated><author><name>Kristian Øllegaard</name></author><id>tag:blog.kristian.io,2011-08-29:python-rounding-to-05.html</id><summary type="html">&lt;p&gt;Here in Switzerland they decided (for some reason, that can't be good)
+not to pay the correct amount, but round it to the nearest 0/5 cent -
+which is a pain when doing python stuff. Therefore i made a Decimal
+rounding function for python, check it out:
+`` from decimal import Decimal, ROUND_HALF_UP  def decimal_round(d, digits=0, to_five=True):     if to_five:         d = (d/Decimal(&amp;quot;5&amp;quot;))     d = d.quantize(Decimal(&amp;quot;1&amp;quot;) / (Decimal('10') ** digits), rounding=ROUND_HALF_UP)     if to_five:         d = d * Decimal(&amp;quot;5&amp;quot;)     return d``&lt;/p&gt;
+</summary></entry></feed>

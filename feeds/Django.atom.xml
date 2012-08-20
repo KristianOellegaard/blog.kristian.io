@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="/" rel="alternate"></link><link href="/feeds/Django.atom.xml" rel="self"></link><id>/</id><updated>2011-01-01T20:16:00Z</updated><entry><title>Current page class, for visited page in menu</title><link href="/current-page-class-for-visited-page-in-menu.html" rel="alternate"></link><updated>2011-01-01T20:16:00Z</updated><author><name>kristian</name></author><id>tag:,2011-01-01:current-page-class-for-visited-page-in-menu.html</id><summary type="html">&lt;p&gt;&lt;p&gt;I found an outdated script on &lt;a class="reference external" href="http://djangosnippets.org/snippets/435/"&gt;djangosnippets&lt;/a&gt;, that doesn't work
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kristian's blog</title><link href="http://blog.kristian.io/" rel="alternate"></link><link href="http://blog.kristian.io/feeds/Django.atom.xml" rel="self"></link><id>http://blog.kristian.io/</id><updated>2011-01-01T20:16:00+01:00</updated><entry><title>Current page class, for visited page in menu</title><link href="http://blog.kristian.io/current-page-class-for-visited-page-in-menu.html" rel="alternate"></link><updated>2011-01-01T20:16:00+01:00</updated><author><name>Kristian Øllegaard</name></author><id>tag:blog.kristian.io,2011-01-01:current-page-class-for-visited-page-in-menu.html</id><summary type="html">&lt;p&gt;&lt;p&gt;I found an outdated script on &lt;a class="reference external" href="http://djangosnippets.org/snippets/435/"&gt;djangosnippets&lt;/a&gt;, that doesn't work
 anymore and updated it to work with the latest jquery version. Feel free
 to comment with suggestions to improve it.&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -22,7 +22,7 @@ to comment with suggestions to improve it.&lt;/p&gt;
     $(document).ready(main);
 })()
 &lt;/pre&gt;
-&lt;/p&gt;</summary></entry><entry><title>Apple iCal integration with HTML website</title><link href="/apple-ical-integration-with-html-website.html" rel="alternate"></link><updated>2010-11-14T15:21:00Z</updated><author><name>kristian</name></author><id>tag:,2010-11-14:apple-ical-integration-with-html-website.html</id><summary type="html">&lt;p&gt;&lt;p&gt;Currently i work in a customer service outsourcing company, where we use
+&lt;/p&gt;</summary></entry><entry><title>Apple iCal integration with HTML website</title><link href="http://blog.kristian.io/apple-ical-integration-with-html-website.html" rel="alternate"></link><updated>2010-11-14T15:21:00+01:00</updated><author><name>Kristian Øllegaard</name></author><id>tag:blog.kristian.io,2010-11-14:apple-ical-integration-with-html-website.html</id><summary type="html">&lt;p&gt;&lt;p&gt;Currently i work in a customer service outsourcing company, where we use
 a system called TotalView for taskforce management. This means that
 every agent can log into this system and check when they have to work
 and how they are doing while they work. I like the concept, however it

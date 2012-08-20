@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2011-08-29T13:55:00Z</updated><entry><title>Python rounding to 05</title><link href="/python-rounding-to-05.html" rel="alternate"></link><updated>2011-08-29T13:55:00Z</updated><author><name>kristian</name></author><id>tag:,2011-08-29:python-rounding-to-05.html</id><summary type="html">&lt;p&gt;Here in Switzerland they decided (for some reason, that can't be good)
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kristian's blog</title><link href="http://blog.kristian.io/" rel="alternate"></link><link href="http://blog.kristian.io/feeds/all.atom.xml" rel="self"></link><id>http://blog.kristian.io/</id><updated>2011-08-29T13:55:00+02:00</updated><entry><title>Python rounding to 05</title><link href="http://blog.kristian.io/python-rounding-to-05.html" rel="alternate"></link><updated>2011-08-29T13:55:00+02:00</updated><author><name>Kristian Øllegaard</name></author><id>tag:blog.kristian.io,2011-08-29:python-rounding-to-05.html</id><summary type="html">&lt;p&gt;Here in Switzerland they decided (for some reason, that can't be good)
 not to pay the correct amount, but round it to the nearest 0/5 cent -
 which is a pain when doing python stuff. Therefore i made a Decimal
 rounding function for python, check it out:
 `` from decimal import Decimal, ROUND_HALF_UP  def decimal_round(d, digits=0, to_five=True):     if to_five:         d = (d/Decimal(&amp;quot;5&amp;quot;))     d = d.quantize(Decimal(&amp;quot;1&amp;quot;) / (Decimal('10') ** digits), rounding=ROUND_HALF_UP)     if to_five:         d = d * Decimal(&amp;quot;5&amp;quot;)     return d``&lt;/p&gt;
-</summary></entry><entry><title>Plugins (management) with RabbitMQ</title><link href="/plugins-management-with-rabbitmq.html" rel="alternate"></link><updated>2011-08-05T15:11:00Z</updated><author><name>kristian</name></author><id>tag:,2011-08-05:plugins-management-with-rabbitmq.html</id><summary type="html">&lt;p&gt;Today i spent quite some time investigating why i could make the plugin
+</summary></entry><entry><title>Plugins (management) with RabbitMQ</title><link href="http://blog.kristian.io/plugins-management-with-rabbitmq.html" rel="alternate"></link><updated>2011-08-05T15:11:00+02:00</updated><author><name>Kristian Øllegaard</name></author><id>tag:blog.kristian.io,2011-08-05:plugins-management-with-rabbitmq.html</id><summary type="html">&lt;p&gt;Today i spent quite some time investigating why i could make the plugin
 &amp;quot;management&amp;quot; run with RabbitMQ. I was running ubuntu 10.04 (LTS) and did
 sudo apt-get install rabbitmq-server.&lt;/p&gt;
 &lt;p&gt;First of all, it was a mystery how to enable the plugins. There were no
@@ -21,7 +21,7 @@ repository available from their website.&lt;/p&gt;
 not beeing able to enable the plugins.&lt;/p&gt;
 &lt;p&gt;You have to run a script inside the bin folder in /usr/lib/rabbitmq/ -
 both for enabling and disabling plugins&lt;/p&gt;
-</summary></entry><entry><title>Managing VMware ESXi 4 from you mac</title><link href="/managing-vmware-esxi-4-from-you-mac.html" rel="alternate"></link><updated>2011-05-11T14:16:00Z</updated><author><name>kristian</name></author><id>tag:,2011-05-11:managing-vmware-esxi-4-from-you-mac.html</id><summary type="html">&lt;p&gt;&lt;p&gt;For my own reference, and maybe others i found this very usefull link:
+</summary></entry><entry><title>Managing VMware ESXi 4 from you mac</title><link href="http://blog.kristian.io/managing-vmware-esxi-4-from-you-mac.html" rel="alternate"></link><updated>2011-05-11T14:16:00+02:00</updated><author><name>Kristian Øllegaard</name></author><id>tag:blog.kristian.io,2011-05-11:managing-vmware-esxi-4-from-you-mac.html</id><summary type="html">&lt;p&gt;&lt;p&gt;For my own reference, and maybe others i found this very usefull link:
 &lt;a class="reference external" href="http://www.howconfig.com/linux/how-to-open-cli-to-vmware-esxi-how-to-clone-virtual-machines/"&gt;http://www.howconfig.com/linux/how-to-open-cli-to-vmware-esxi-how-to-clone-virtual-machines/&lt;/a&gt;
 This will be a direct quote, in case the site will ever change:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -43,7 +43,7 @@ power.shutdown power.suspend esxtop = is your top tool&lt;/blockquote&gt;
 above commands. It might tell you that its unsupported, unfortunately
 there is no supported client to mac, so thats not really usefull
 information anyway Use at your own risk.&lt;/p&gt;
-&lt;/p&gt;</summary></entry><entry><title>VMVare fusion black screen after first reboot</title><link href="/vmvare-fusion-black-screen-after-first-reboot.html" rel="alternate"></link><updated>2011-05-07T22:19:00Z</updated><author><name>kristian</name></author><id>tag:,2011-05-07:vmvare-fusion-black-screen-after-first-reboot.html</id><summary type="html">&lt;p&gt;Today i wanted to test some stuff, so i fired up 3 vms with the newest
+&lt;/p&gt;</summary></entry><entry><title>VMVare fusion black screen after first reboot</title><link href="http://blog.kristian.io/vmvare-fusion-black-screen-after-first-reboot.html" rel="alternate"></link><updated>2011-05-07T22:19:00+02:00</updated><author><name>Kristian Øllegaard</name></author><id>tag:blog.kristian.io,2011-05-07:vmvare-fusion-black-screen-after-first-reboot.html</id><summary type="html">&lt;p&gt;Today i wanted to test some stuff, so i fired up 3 vms with the newest
 ubuntu server, i used VMVware fusions easy install feature and it didnt
 take many minutes before everything worked, however, then i did sudo
 reboot and got black screen, no reaction at all. However, after randomly
@@ -52,7 +52,7 @@ printed the different services going down. So i found out that it
 default didnt activate any tty's, so you just have to switch to any one
 of them, e.g. ALT + F1 (if you are on a macbook pro too, remember the FN
 button in the combination, to actually use the F2 key)&lt;/p&gt;
-</summary></entry><entry><title>Next Danish election threatened by workers union</title><link href="/next-danish-election-threatened-by-workers-union.html" rel="alternate"></link><updated>2011-02-21T23:15:00Z</updated><author><name>kristian</name></author><id>tag:,2011-02-21:next-danish-election-threatened-by-workers-union.html</id><summary type="html">&lt;p&gt;In Denmark we will soon have the next 4th yearly election for our
+</summary></entry><entry><title>Next Danish election threatened by workers union</title><link href="http://blog.kristian.io/next-danish-election-threatened-by-workers-union.html" rel="alternate"></link><updated>2011-02-21T23:15:00+01:00</updated><author><name>Kristian Øllegaard</name></author><id>tag:blog.kristian.io,2011-02-21:next-danish-election-threatened-by-workers-union.html</id><summary type="html">&lt;p&gt;In Denmark we will soon have the next 4th yearly election for our
 parliament &amp;quot;folketinget&amp;quot;. However, it seems to be threatened by the
 workers union PROSA, whose members are maintaining some of the most
 important IT systems in Denmark (including the police systems and the
@@ -67,7 +67,7 @@ for every project. I think this is a great example of the public IT
 administration failing once again - never pick the same supplier for all
 the public service systems - you risk loosing them all simultaneously.
 Read more at &lt;a class="reference external" href="http://www.comon.dk/nyheder/prosa-truer-folketingsvalg-1.391053.html"&gt;comon&lt;/a&gt;&lt;/p&gt;
-</summary></entry><entry><title>How to install PIL (Python Imaging Library) on Mac</title><link href="/how-to-install-pil-python-imaging-library-on-mac.html" rel="alternate"></link><updated>2011-02-12T13:02:00Z</updated><author><name>kristian</name></author><id>tag:,2011-02-12:how-to-install-pil-python-imaging-library-on-mac.html</id><summary type="html">&lt;p&gt;I often get the error &amp;quot;ImportError: No module named PIL&amp;quot;, when using
+</summary></entry><entry><title>How to install PIL (Python Imaging Library) on Mac</title><link href="http://blog.kristian.io/how-to-install-pil-python-imaging-library-on-mac.html" rel="alternate"></link><updated>2011-02-12T13:02:00+01:00</updated><author><name>Kristian Øllegaard</name></author><id>tag:blog.kristian.io,2011-02-12:how-to-install-pil-python-imaging-library-on-mac.html</id><summary type="html">&lt;p&gt;I often get the error &amp;quot;ImportError: No module named PIL&amp;quot;, when using
 ImageFields in django. I had my current mac for about 2 years and i
 never found out how to install PIL. Today, however, i really needed it
 and i found this &lt;a class="reference external" href="http://www.p16blog.com/p16/2008/05/appengine-installing-pil-on-os-x-1053.html"&gt;amazing fix&lt;/a&gt;. In case this perfect description will
@@ -77,7 +77,7 @@ to p16blog.com&lt;/strong&gt; Execute the following code
 &lt;a class="reference external" href="http://pythonmac.org/packages/py25-fat/index.html"&gt;Download&lt;/a&gt; and install PIL Remember to add PIL to PYTHONPATH
 &lt;tt class="docutils literal"&gt;export &lt;span class="pre"&gt;PYTHONPATH=/Library/Frameworks/Python.framework/Versions/2.5/lib/python2.5/site-packages/&lt;/span&gt;&lt;/tt&gt;
 &lt;em&gt;(should be added to your startup script, e.g. ~/.bash_profile)&lt;/em&gt;&lt;/p&gt;
-</summary></entry><entry><title>Puppet: err: Could not retrieve catalog from remote server</title><link href="/puppet-err-could-not-retrieve-catalog-from-remote-server.html" rel="alternate"></link><updated>2011-01-13T20:50:00Z</updated><author><name>kristian</name></author><id>tag:,2011-01-13:puppet-err-could-not-retrieve-catalog-from-remote-server.html</id><summary type="html">&lt;p&gt;&lt;p&gt;Yesterday i found &lt;a class="reference external" href="http://www.puppetlabs.com/puppet/introduction/"&gt;Puppet&lt;/a&gt; and shortly after i bought the book &lt;a class="reference external" href="http://www.apress.com/book/view/1590599780"&gt;Pulling
+</summary></entry><entry><title>Puppet: err: Could not retrieve catalog from remote server</title><link href="http://blog.kristian.io/puppet-err-could-not-retrieve-catalog-from-remote-server.html" rel="alternate"></link><updated>2011-01-13T20:50:00+01:00</updated><author><name>Kristian Øllegaard</name></author><id>tag:blog.kristian.io,2011-01-13:puppet-err-could-not-retrieve-catalog-from-remote-server.html</id><summary type="html">&lt;p&gt;&lt;p&gt;Yesterday i found &lt;a class="reference external" href="http://www.puppetlabs.com/puppet/introduction/"&gt;Puppet&lt;/a&gt; and shortly after i bought the book &lt;a class="reference external" href="http://www.apress.com/book/view/1590599780"&gt;Pulling
 Strings With Puppet&lt;/a&gt;. I got up and running with a few test machines
 (while reading the book) within a couple of hours and i managed to do
 some basic stuff. Furthermore i installed puppet-dashboard, an overall
@@ -97,7 +97,7 @@ it, so its called nginx and nothing else. This will remove this error. I
 googled this thing for hours, hopefully this will be #1 next time
 someone experience this. Please comment if you use Puppet and saw this
 article! :-)&lt;/p&gt;
-&lt;/p&gt;</summary></entry><entry><title>Current page class, for visited page in menu</title><link href="/current-page-class-for-visited-page-in-menu.html" rel="alternate"></link><updated>2011-01-01T20:16:00Z</updated><author><name>kristian</name></author><id>tag:,2011-01-01:current-page-class-for-visited-page-in-menu.html</id><summary type="html">&lt;p&gt;&lt;p&gt;I found an outdated script on &lt;a class="reference external" href="http://djangosnippets.org/snippets/435/"&gt;djangosnippets&lt;/a&gt;, that doesn't work
+&lt;/p&gt;</summary></entry><entry><title>Current page class, for visited page in menu</title><link href="http://blog.kristian.io/current-page-class-for-visited-page-in-menu.html" rel="alternate"></link><updated>2011-01-01T20:16:00+01:00</updated><author><name>Kristian Øllegaard</name></author><id>tag:blog.kristian.io,2011-01-01:current-page-class-for-visited-page-in-menu.html</id><summary type="html">&lt;p&gt;&lt;p&gt;I found an outdated script on &lt;a class="reference external" href="http://djangosnippets.org/snippets/435/"&gt;djangosnippets&lt;/a&gt;, that doesn't work
 anymore and updated it to work with the latest jquery version. Feel free
 to comment with suggestions to improve it.&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
@@ -120,7 +120,7 @@ to comment with suggestions to improve it.&lt;/p&gt;
     $(document).ready(main);
 })()
 &lt;/pre&gt;
-&lt;/p&gt;</summary></entry><entry><title>Apple iCal integration with HTML website</title><link href="/apple-ical-integration-with-html-website.html" rel="alternate"></link><updated>2010-11-14T15:21:00Z</updated><author><name>kristian</name></author><id>tag:,2010-11-14:apple-ical-integration-with-html-website.html</id><summary type="html">&lt;p&gt;&lt;p&gt;Currently i work in a customer service outsourcing company, where we use
+&lt;/p&gt;</summary></entry><entry><title>Apple iCal integration with HTML website</title><link href="http://blog.kristian.io/apple-ical-integration-with-html-website.html" rel="alternate"></link><updated>2010-11-14T15:21:00+01:00</updated><author><name>Kristian Øllegaard</name></author><id>tag:blog.kristian.io,2010-11-14:apple-ical-integration-with-html-website.html</id><summary type="html">&lt;p&gt;&lt;p&gt;Currently i work in a customer service outsourcing company, where we use
 a system called TotalView for taskforce management. This means that
 every agent can log into this system and check when they have to work
 and how they are doing while they work. I like the concept, however it

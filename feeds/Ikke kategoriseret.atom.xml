@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="/" rel="alternate"></link><link href="/feeds/Ikke%20kategoriseret.atom.xml" rel="self"></link><id>/</id><updated>2011-08-29T13:55:00Z</updated><entry><title>Python rounding to 05</title><link href="/python-rounding-to-05.html" rel="alternate"></link><updated>2011-08-29T13:55:00Z</updated><author><name>kristian</name></author><id>tag:,2011-08-29:python-rounding-to-05.html</id><summary type="html">&lt;p&gt;Here in Switzerland they decided (for some reason, that can't be good)
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Kristian's blog</title><link href="http://blog.kristian.io/" rel="alternate"></link><link href="http://blog.kristian.io/feeds/Ikke%20kategoriseret.atom.xml" rel="self"></link><id>http://blog.kristian.io/</id><updated>2011-08-29T13:55:00+02:00</updated><entry><title>Python rounding to 05</title><link href="http://blog.kristian.io/python-rounding-to-05.html" rel="alternate"></link><updated>2011-08-29T13:55:00+02:00</updated><author><name>Kristian Øllegaard</name></author><id>tag:blog.kristian.io,2011-08-29:python-rounding-to-05.html</id><summary type="html">&lt;p&gt;Here in Switzerland they decided (for some reason, that can't be good)
 not to pay the correct amount, but round it to the nearest 0/5 cent -
 which is a pain when doing python stuff. Therefore i made a Decimal
 rounding function for python, check it out:
 `` from decimal import Decimal, ROUND_HALF_UP  def decimal_round(d, digits=0, to_five=True):     if to_five:         d = (d/Decimal(&amp;quot;5&amp;quot;))     d = d.quantize(Decimal(&amp;quot;1&amp;quot;) / (Decimal('10') ** digits), rounding=ROUND_HALF_UP)     if to_five:         d = d * Decimal(&amp;quot;5&amp;quot;)     return d``&lt;/p&gt;
-</summary></entry><entry><title>Plugins (management) with RabbitMQ</title><link href="/plugins-management-with-rabbitmq.html" rel="alternate"></link><updated>2011-08-05T15:11:00Z</updated><author><name>kristian</name></author><id>tag:,2011-08-05:plugins-management-with-rabbitmq.html</id><summary type="html">&lt;p&gt;Today i spent quite some time investigating why i could make the plugin
+</summary></entry><entry><title>Plugins (management) with RabbitMQ</title><link href="http://blog.kristian.io/plugins-management-with-rabbitmq.html" rel="alternate"></link><updated>2011-08-05T15:11:00+02:00</updated><author><name>Kristian Øllegaard</name></author><id>tag:blog.kristian.io,2011-08-05:plugins-management-with-rabbitmq.html</id><summary type="html">&lt;p&gt;Today i spent quite some time investigating why i could make the plugin
 &amp;quot;management&amp;quot; run with RabbitMQ. I was running ubuntu 10.04 (LTS) and did
 sudo apt-get install rabbitmq-server.&lt;/p&gt;
 &lt;p&gt;First of all, it was a mystery how to enable the plugins. There were no
@@ -21,7 +21,7 @@ repository available from their website.&lt;/p&gt;
 not beeing able to enable the plugins.&lt;/p&gt;
 &lt;p&gt;You have to run a script inside the bin folder in /usr/lib/rabbitmq/ -
 both for enabling and disabling plugins&lt;/p&gt;
-</summary></entry><entry><title>Next Danish election threatened by workers union</title><link href="/next-danish-election-threatened-by-workers-union.html" rel="alternate"></link><updated>2011-02-21T23:15:00Z</updated><author><name>kristian</name></author><id>tag:,2011-02-21:next-danish-election-threatened-by-workers-union.html</id><summary type="html">&lt;p&gt;In Denmark we will soon have the next 4th yearly election for our
+</summary></entry><entry><title>Next Danish election threatened by workers union</title><link href="http://blog.kristian.io/next-danish-election-threatened-by-workers-union.html" rel="alternate"></link><updated>2011-02-21T23:15:00+01:00</updated><author><name>Kristian Øllegaard</name></author><id>tag:blog.kristian.io,2011-02-21:next-danish-election-threatened-by-workers-union.html</id><summary type="html">&lt;p&gt;In Denmark we will soon have the next 4th yearly election for our
 parliament &amp;quot;folketinget&amp;quot;. However, it seems to be threatened by the
 workers union PROSA, whose members are maintaining some of the most
 important IT systems in Denmark (including the police systems and the

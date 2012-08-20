@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>Kristian's blog - Ikke kategoriseret</title>
+        <title>Kristian's blog - Sysadm</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
         
@@ -37,17 +37,15 @@
                 
                 
                 
-                    <li ><a href=".././category/apple-mac-system-administration.html">Apple, Mac, System administration</a></li>
-                
                     <li ><a href=".././category/django.html">Django</a></li>
                 
-                    <li ><a href=".././category/django-mac.html">Django, Mac</a></li>
+                    <li ><a href=".././category/mac.html">Mac</a></li>
                 
-                    <li class="active"><a href=".././category/ikke-kategoriseret.html">Ikke kategoriseret</a></li>
+                    <li ><a href=".././category/other.html">Other</a></li>
                 
-                    <li ><a href=".././category/mac-system-administration.html">Mac, System administration</a></li>
+                    <li ><a href=".././category/python.html">Python</a></li>
                 
-                    <li ><a href=".././category/system-administration.html">System administration</a></li>
+                    <li class="active"><a href=".././category/sysadm.html">Sysadm</a></li>
                 
                 </ul></nav>
         </header><!-- /#banner -->
@@ -59,10 +57,10 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".././python-rounding-to-05.html">Python rounding to 05</a></h1> 
+                    <h1 class="entry-title"><a href=".././plugins-management-with-rabbitmq.html">Plugins (management) with RabbitMQ</a></h1> 
                     <footer class="post-info">
-        <abbr class="published" title="2011-08-29T13:55:00">
-                Mon 29 August 2011
+        <abbr class="published" title="2011-08-05T15:11:00">
+                Fri 05 August 2011
         </abbr>
 
         
@@ -70,15 +68,27 @@
                 By <a class="url fn" href=".././author/kristian-ollegaard.html">Kristian Øllegaard</a>
         </address>
         
-<p>In <a href=".././category/ikke-kategoriseret.html">Ikke kategoriseret</a>. </p>
+<p>In <a href=".././category/sysadm.html">Sysadm</a>. </p>
 
 
 
-</footer><!-- /.post-info --><p>Here in Switzerland they decided (for some reason, that can't be good)
-not to pay the correct amount, but round it to the nearest 0/5 cent -
-which is a pain when doing python stuff. Therefore i made a Decimal
-rounding function for python, check it out:
-`` from decimal import Decimal, ROUND_HALF_UP  def decimal_round(d, digits=0, to_five=True):     if to_five:         d = (d/Decimal(&quot;5&quot;))     d = d.quantize(Decimal(&quot;1&quot;) / (Decimal('10') ** digits), rounding=ROUND_HALF_UP)     if to_five:         d = d * Decimal(&quot;5&quot;)     return d``</p>
+</footer><!-- /.post-info --><p>Today i spent quite some time investigating why i could make the plugin
+&quot;management&quot; run with RabbitMQ. I was running ubuntu 10.04 (LTS) and did
+sudo apt-get install rabbitmq-server.</p>
+<p>First of all, it was a mystery how to enable the plugins. There were no
+default plugin directory existing, but thats solved by adding it
+yourself. You can find your rabbitmq directory with whereis, e.g.
+&quot;whereis rabbitmq&quot;. Then you just create a folder called &quot;plugins&quot;
+inside the folder called rabbitmq_version, in my case:
+/usr/lib/rabbitmq/lib/rabbitmq_server-1.7.2/</p>
+<p>In the above case, i didnt get it working, as the management interface
+isn't compatible with 1.7.2, which is bundled with the LTS. So now I'm
+investigating the possibility to upgrade it via their custom apt-get
+repository available from their website.</p>
+<p>However, the reason why im writing this, is that i spent a lot of time
+not beeing able to enable the plugins.</p>
+<p>You have to run a script inside the bin folder in /usr/lib/rabbitmq/ -
+both for enabling and disabling plugins</p>
 
                 </article>
                 
@@ -99,14 +109,14 @@ rounding function for python, check it out:
             
             <li><article class="hentry">    
                 <header>
-                    <h1><a href=".././plugins-management-with-rabbitmq.html" rel="bookmark"
-                           title="Permalink to Plugins (management) with RabbitMQ">Plugins (management) with RabbitMQ</a></h1>
+                    <h1><a href=".././vmvare-fusion-black-screen-after-first-reboot.html" rel="bookmark"
+                           title="Permalink to VMVare fusion black screen after first reboot">VMVare fusion black screen after first reboot</a></h1>
                 </header>
                 
                 <div class="entry-content">
                 <footer class="post-info">
-        <abbr class="published" title="2011-08-05T15:11:00">
-                Fri 05 August 2011
+        <abbr class="published" title="2011-05-07T22:19:00">
+                Sat 07 May 2011
         </abbr>
 
         
@@ -114,17 +124,16 @@ rounding function for python, check it out:
                 By <a class="url fn" href=".././author/kristian-ollegaard.html">Kristian Øllegaard</a>
         </address>
         
-<p>In <a href=".././category/ikke-kategoriseret.html">Ikke kategoriseret</a>. </p>
+<p>In <a href=".././category/sysadm.html">Sysadm</a>. </p>
 
 
 
 </footer><!-- /.post-info -->
-                <p>Today i spent quite some time investigating why i could make the plugin
-&quot;management&quot; run with RabbitMQ. I was running ubuntu 10.04 (LTS) and did
-sudo apt-get install rabbitmq-server.</p>
-<p>First of all, it was a mystery how to enable the plugins. There were no
-default plugin directory existing, but ...</p>
-                <a class="readmore" href=".././plugins-management-with-rabbitmq.html">read more</a>
+                <p>Today i wanted to test some stuff, so i fired up 3 vms with the newest
+ubuntu server, i used VMVware fusions easy install feature and it didnt
+take many minutes before everything worked, however, then i did sudo
+reboot and got black screen, no reaction at all. However, after ...</p>
+                <a class="readmore" href=".././vmvare-fusion-black-screen-after-first-reboot.html">read more</a>
                 
                 </div><!-- /.entry-content -->
             </article></li>
@@ -137,14 +146,14 @@ default plugin directory existing, but ...</p>
             
             <li><article class="hentry">    
                 <header>
-                    <h1><a href=".././next-danish-election-threatened-by-workers-union.html" rel="bookmark"
-                           title="Permalink to Next Danish election threatened by workers union">Next Danish election threatened by workers union</a></h1>
+                    <h1><a href=".././puppet-err-could-not-retrieve-catalog-from-remote-server.html" rel="bookmark"
+                           title="Permalink to Puppet: err: Could not retrieve catalog from remote server">Puppet: err: Could not retrieve catalog from remote server</a></h1>
                 </header>
                 
                 <div class="entry-content">
                 <footer class="post-info">
-        <abbr class="published" title="2011-02-21T23:15:00">
-                Mon 21 February 2011
+        <abbr class="published" title="2011-01-13T20:50:00">
+                Thu 13 January 2011
         </abbr>
 
         
@@ -152,17 +161,17 @@ default plugin directory existing, but ...</p>
                 By <a class="url fn" href=".././author/kristian-ollegaard.html">Kristian Øllegaard</a>
         </address>
         
-<p>In <a href=".././category/ikke-kategoriseret.html">Ikke kategoriseret</a>. </p>
+<p>In <a href=".././category/sysadm.html">Sysadm</a>. </p>
 
 
 
 </footer><!-- /.post-info -->
-                <p>In Denmark we will soon have the next 4th yearly election for our
-parliament &quot;folketinget&quot;. However, it seems to be threatened by the
-workers union PROSA, whose members are maintaining some of the most
-important IT systems in Denmark (including the police systems and the
-tax authorities). All these systems ...</p>
-                <a class="readmore" href=".././next-danish-election-threatened-by-workers-union.html">read more</a>
+                <p><p>Yesterday i found <a class="reference external" href="http://www.puppetlabs.com/puppet/introduction/">Puppet</a> and shortly after i bought the book <a class="reference external" href="http://www.apress.com/book/view/1590599780">Pulling
+Strings With Puppet</a>. I got up and running with a few test machines
+(while reading the book) within a couple of hours and i managed to do
+some basic stuff. Furthermore i installed puppet-dashboard, an overall
+pretty undocumented ...</p></p>
+                <a class="readmore" href=".././puppet-err-could-not-retrieve-catalog-from-remote-server.html">read more</a>
                 
                 </div><!-- /.entry-content -->
             </article></li>
